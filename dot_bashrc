@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-eval "$(oh-my-posh init bash --config /mnt/c/Users/paris/omp.json)"
+eval "$(oh-my-posh init bash --config $HOME/.local/share/chezmoi/theme.omp.json)"
 
 export PATH="$PATH:/usr/local/go/bin"
-export GITHUB_USER=OneFineDev
+export GITHUB_USERNAME=OneFineDev
