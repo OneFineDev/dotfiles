@@ -1,1 +1,1 @@
-echo "in the thing"
+echo "in the thing new"

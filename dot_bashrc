@@ -1,5 +1,3 @@
-
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -107,9 +105,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# enable programmable completion features
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -117,10 +113,35 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-eval "$(oh-my-posh init bash --config "$HOME/.local/share/chezmoi/executable_theme.omp.json")"
 
-if [ -d "$HOME/.local/share/chezmoi/dot_bashrc.d" ]; then
-    find "$HOME/.local/share/chezmoi/dot_bashrc.d" -type f -readable | while IFS= read -r script; do
-        source "$script"
+eval "$(oh-my-posh init bash --config "$HOME/.theme.omp.json")"
+
+# Source custom bashrc files including completions
+if [ -d "$HOME/.bashrc.d" ]; then
+    # First source files directly in .bashrc.d
+    for script in "$HOME/.bashrc.d"/*.bashrc; do
+        if [ -r "$script" ]; then
+            echo "Sourcing $script"
+            . "$script"
+        fi
     done
+    
+    # Then source files in subdirectories
+    if [ -d "$HOME/.bashrc.d/completions" ]; then
+        for script in "$HOME/.bashrc.d/completions"/*.bashrc; do
+            if [ -r "$script" ]; then
+                echo "Sourcing completion $script"
+                . "$script"
+            fi
+        done
+    fi
+    if [ -d "$HOME/.bashrc.d/environment" ]; then
+        for script in "$HOME/.bashrc.d/environment"/*.bashrc; do
+            if [ -r "$script" ]; then
+                echo "Sourcing completion $script"
+                . "$script"
+            fi
+        done
+    fi
 fi
+
