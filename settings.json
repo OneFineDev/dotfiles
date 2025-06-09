@@ -1,0 +1,333 @@
+{
+  "sonarlint.rules": {
+    "go:S100": {
+      "level": "off"
+    }
+  },
+
+  "[azure-pipelines]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.autoIndent": "full",
+    "editor.minimap.enabled": false,
+    "workbench.editor.languageDetection": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.rulers": [115]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on"
+  },
+  "[packer]": {
+    "editor.defaultFormatter": "szTheory.vscode-packer-powertools"
+  },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell",
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "dotfiles.repository": "https://brewindolphin@dev.azure.com/brewindolphin/Hackathon/_git/dotfiles_poc",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "install.sh",
+  "appService.showSavePrompt": false,
+  "azdoPullRequests.orgUrl": "https://brewindolphin.visualstudio.com/",
+  "azdoPullRequests.projectName": "DITeam-ModernDigitalPlatform",
+  "azure.tenant": "",
+  "azureFunctions.showCoreToolsWarning": false,
+  "azureFunctions.showProjectWarning": false,
+  "coverage-gutters.coverageFileNames": [
+    "test/out/report.xml",
+    "report.xml",
+    "coverage.xml",
+    "lcov.info",
+    "cov.xml",
+    "source_coverage.xml",
+    "jacoco.xml",
+    "coverage.cobertura.xml"
+  ],
+  "coverage-gutters.showGutterCoverage": false,
+  "coverage-gutters.showLineCoverage": true,
+  "cSpell.enableFiletypes": ["powershell", "terraform", "terraform-vars"],
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "azurerm",
+    "BDADO",
+    "Brewin",
+    "brewindolphin",
+    "Caskaydia",
+    "color",
+    "Commitizen",
+    "dont",
+    "MSAL",
+    "psobject",
+    "PSSA",
+    "pwsh",
+    "rbcbrewindolphin",
+    "refs",
+    "requiredmodules",
+    "tflint",
+    "Thru",
+    "vsicons"
+  ],
+  "debug.javascript.autoAttachFilter": "disabled",
+  "debug.onTaskErrors": "abort",
+  "docker.containers.description": ["Status"],
+  "editor.defaultFormatter": "ms-vscode.powershell",
+  "editor.formatOnType": false,
+  "debug.inlineValues": "off",
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "mouseover",
+  "editor.minimap.size": "proportional",
+  "editor.quickSuggestionsDelay": 3000,
+  "editor.rulers": [
+    {
+      "color": "#1f5d6d44",
+      "column": 115
+    }
+  ],
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 130,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "go": false,
+    "terraform": false,
+    "powershell": "true"
+  },
+  "gitlens.views.remotes.branches.layout": "list",
+  "go.toolsManagement.autoUpdate": true,
+  "http.proxyAuthorization": null,
+  "http.proxyStrictSSL": false,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveshare.connectionMode": "auto",
+  "liveshare.diagnosticLogging": true,
+  "liveshare.diagnosticLoggingLevel": "Error",
+  "liveshare.diagnosticMode": true,
+  "liveshare.launcherClient": "visualStudioCode",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.associations": {
+    ".azdo": "Azure-Pipelines",
+    "ado": "Azure-Pipelines",
+    "cd": "Ci"
+  },
+  "files.associations": {
+    "{**/*a*do/**/*.y*ml}": "azure-pipelines",
+    "{**/*helm/**/*.y*ml}": "yaml"
+  },
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.languages.associations": {
+    "azure-pipelines": "Azure-Pipelines"
+  },
+  // powershell
+  "powershell.buttons.showPanelMovementButtons": true,
+  "powershell.codeFormatting.alignPropertyValuePairs": true,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.debugging.createTemporaryIntegratedConsole": true,
+  "powershell.integratedConsole.focusConsoleOnExecute": false,
+  "powershell.integratedConsole.suppressStartupBanner": true,
+  "powershell.powerShellDefaultVersion": "PowerShell (x64)",
+  "powershell.promptToUpdatePowerShell": false,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.startAutomatically": true,
+  "prettier.bracketSameLine": true,
+  "projectManager.git.baseFolders": ["/home/parisb/git-repos/go"],
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.remotePlatform": {
+    "192.168.2.100": "linux",
+    "192.168.2.137": "linux",
+    "192.168.10.11": "windows",
+    "192.168.10.13": "windows",
+    "192.168.10.18": "windows",
+    "192.168.10.143": "linux",
+    "192.168.20.3": "linux",
+    "192.168.20.101": "linux"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.tabs.location": "left",
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2025-05-31T09:09:46.613Z",
+    "vscode-kubernetes.helm-path.linux": "/home/parisb/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.helm-path.windows": "C:\\Users\\paris\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+    "vscode-kubernetes.kubectl-path.windows": "C:\\Users\\paris\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
+    "vscode-kubernetes.minikube-path.linux": "/home/parisb/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vscode-kubernetes.minikube-path.windows": "C:\\Users\\paris\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
+    "vscode-kubernetes.minikube-path-windows": "C:\\Users\\brooker_p\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
+    "vscode-kubernetes.helm-path-windows": "C:\\Users\\brooker_p\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.restoreWindows": "none",
+  "workbench.activityBar.location": "default",
+  "workbench.colorCustomizations": {
+    "[Black]": {
+      "activityBar.activeBackground": "#21bae061",
+      "activityBar.border": "#21bae061",
+      "activityBar.foreground": "#21bae0e1",
+      "badge.background": "#21bae061",
+      "commandCenter.background": "#1f5d6d44",
+      "commandCenter.border": "#21bae0e1",
+      "menu.border": "#21bae061",
+      "menu.selectionBackground": "#21bae061",
+      "menubar.selectionBackground": "#21bae061",
+      "panel.border": "#21bae061",
+      "scrollbarSlider.background": "#21bae061",
+      "scrollbarSlider.hoverBackground": "#21bae0e1",
+      "sideBar.border": "#21bae061",
+      "sideBar.foreground": "#21bae0e1",
+      "statusBar.border": "#21bae061",
+      "statusBar.foreground": "#21bae0e1",
+      "statusBarItem.remoteBackground": "#21bae0e1",
+      "tab.activeBackground": "#1f5d6d44",
+      "tab.border": "#21bae061",
+      "terminal.border": "#21bae061",
+      "terminal.selectionForeground": "#1f5d6d44",
+      "terminal.tab.activeBorder": "#21bae0e1",
+      "titleBar.activeForeground": "#21bae0e1",
+      "titleBar.border": "#21bae061"
+    }
+  },
+  "workbench.colorTheme": "Black",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.restoreViewState": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "gitlens.rebase"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "left",
+  "workbench.panel.opensMaximized": "never",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "powershell.pester.useLegacyCodeLens": false,
+  "azureResourceManagerTools.parameterFiles": {
+    "c:\\src\\digital_products\\ncr\\client-reporting-function-report-processor\\clientreporting.function.reportprocessor.infrastructure\\azuredeploy.json": "azuredeploy.parameters.json"
+  },
+  "cSpell.ignoreWords": ["appreg"],
+  "powershell.codeFormatting.openBraceOnSameLine": false,
+  "powershell.codeFormatting.newLineAfterCloseBrace": false,
+  "powershell.codeFormatting.newLineAfterOpenBrace": false,
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "powershell.codeFormatting.preset": "OTBS",
+  "explorer.compactFolders": false,
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[kusto]": {
+    "editor.defaultFormatter": "rosshamish.kuskus-kusto-language-server"
+  },
+  "extensions.autoUpdate": false,
+  "hediet.vscode-drawio.resizeImages": null,
+  "pester.suppressCodeLensNotice": true,
+  "powershell.pester.outputVerbosity": "Detailed",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "sonarlint.testFilePattern": "**/*test.go",
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "settingsSync.ignoredExtensions": ["defaltd.go-coverage-viewer"],
+  "testing.coverageToolbarEnabled": true,
+  "testing.coverageBarThresholds": {
+    "red": 0,
+    "yellow": 60,
+    "green": 90
+  },
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.integratedConsole.startInBackground": true,
+  "editor.formatOnSave": true
+}

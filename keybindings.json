@@ -1,0 +1,36 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+F12",
+    "command": "workbench.action.tasks.build"
+    // "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "ctrl+f11",
+    "command": "workbench.action.tasks.test"
+    // "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.focus",
+    "when": "workbench.panel.chat.view.copilot.active && !editorFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.panel.chat.view.copilot.focus",
+    "when": "editorFocus && !terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus && !workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "ctrl+g ctrl+r",
+    "command": "gitlens.openBranchOnRemote"
+  },
+  {
+    "key": "ctrl+shift+alt+k",
+    "command": "workbench.action.openChat"
+  }
+]
